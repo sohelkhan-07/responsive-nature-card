@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 100%;
+    max-width: 422px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.card {
+    padding: 6px;
+}
+
+img {
+    width: 100%;
+    display: block;
+    border: 2px solid black;
+    border-radius: 15px;
+    object-fit: cover;
+    aspect-ratio: 405 / 250;
+}
+
+.capsules {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.capsules span {
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 3px 7px;
+    font-size: 16px;
+    font-family: 'Baloo Bhai 2', Arial, Helvetica, sans-serif;
+}
+
+.Content {
+    padding: 0 15px;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.Content h2 {
+    font-size: clamp(1.6rem, 4vw, 2rem);
+    margin-bottom: 10px;
+}
+
+.Content p {
+    padding-bottom: 15px;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    line-height: 1.6;
+}
+
+.click-button {
+    text-align: center;
+    padding: 15px;
+}
+
+button {
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.click-button button:hover {
+    background-color: rgb(194, 225, 246);
+    color: rgb(10, 136, 214);
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .capsules {
+        padding: 15px;
+    }
+
+    .Content {
+        padding: 0 12px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 220px;
+    }
+}
